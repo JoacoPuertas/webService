@@ -1,0 +1,28 @@
+nav {
+    display: flex;
+    justify-content: space-around; /* Centrar horizontalmente el grupo de enlaces */
+    align-items: center; /* Centrar verticalmente el grupo de enlaces */
+    background-color: #034B4C; /* Añade un color de fondo si lo deseas */
+    .nav {
+        display: flex;
+        align-items: center; /* Centrar los elementos hijos verticalmente */
+    }
+    .burger {
+        width: 5vw;
+    }
+    .nav-link {
+        color: #FEFFFA;
+    }
+    .nav-link:hover {
+        color: #a5aab4;
+    }
+    .navbar-collapse {
+        margin-top: 0;
+    }
+
+    @media screen and (max-width: 991px) {
+        .navbar-collapse {
+            margin-top: 15px;
+        }
+    }
+}
