@@ -26,3 +26,18 @@ nav {
         }
     }
 }
+
+
+
+.div1 {
+    background-color: violet;
+    width: 500px;
+    height: 500px;
+    .div2 {
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        margin:auto;
+    }
+}
+
