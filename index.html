@@ -13,24 +13,17 @@
     <link rel="stylesheet" href="scss/main.css" />
   </head>
   <body>
-    <nav id="nav" class="navbar navbar-expand-lg navbar-light p-3 fs-4">
+
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light p-3 fs-4"> 
       <div class="container-fluid">
-        <button
-          class="navbar-toggler bg-dark"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <img src="assets/boton-menu.svg" alt="Boton menu" class="burger" />
+        <a class="navbar-brand" href="#">
+          JL
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" >
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item mx-3">
               <a class="nav-link" href="#trabajos">Trabajos</a>
             </li>
@@ -44,52 +37,54 @@
         </div>
       </div>
     </nav>
-    <header>
-      <h2>
-        <b>Somos Joaquín y Lara</b> - Estudiantes de diseño multimedial,
+    <header class="p-5">
+      <h1>
+        <strong>Somos Joaquín y Lara</strong> - Estudiantes de diseño multimedial,
         apasionados por crear experiencias web cautivadoras que inspiran y
         conectan.
-      </h2>
+      </h1>
     </header>
-    <main id="trabajos">
-      <div class="card" style="width: 18rem">
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Club Social y Deportivo Sarmiento</h5>
-          <p class="card-text">Página web</p>
-        </div>
+    <main id="trabajos" class="container-fluid p-5">
+      <div class="row">
+          <div class="card col-12 col-lg-6 carta">
+              <img src="assets/paginas/sarmiento.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                  <h5 class="card-title">Club Social y Deportivo Sarmiento</h5>
+                  <p class="card-text">Página web</p>
+              </div>
+          </div>
+          <div class="card col-12 col-lg-6 carta">
+              <img src="assets/paginas/karate.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                  <h5 class="card-title">Escuela de karate Nin Do Kai</h5>
+                  <p class="card-text">Página web</p>
+              </div>
+          </div>
+          <div class="card col-12 cartaXl">
+              <img src="assets/paginas/multimedia.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                  <h5 class="card-title">Trabajos Multimedia</h5>
+                  <p class="card-text">
+                      Juegos - Diseños de Aplicaciones - Sensores - Diseño de Personajes
+                  </p>
+              </div>
+          </div>
+          <div class="card col-12 col-lg-6 carta ">
+              <img src="assets/paginas/iliada.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                  <h5 class="card-title">La Iliada Game</h5>
+                  <p class="card-text">Página Web</p>
+              </div>
+          </div>
+          <div class="card col-12 col-lg-6 carta ">
+              <img src="assets/paginas/principito.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                  <h5 class="card-title">El principito Game</h5>
+                  <p class="card-text">Página Web</p>
+              </div>
+          </div>
       </div>
-      <div class="card" style="width: 18rem">
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Escuela de karate Nin Do Kai</h5>
-          <p class="card-text">Página web</p>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Trabajos Multimedia</h5>
-          <p class="card-text">
-            Juegos - Diseños de Aplicaciones - Sensores - Diseño de Personajes
-          </p>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">La Iliada Game</h5>
-          <p class="card-text">Página Web</p>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">El principito Game</h5>
-          <p class="card-text">Página Web</p>
-        </div>
-      </div>
-    </main>
+  </main>
     <section id="nosotros">
       <h2>Hola!</h2>
       <h5>Desde La Plata, Argentina</h5>

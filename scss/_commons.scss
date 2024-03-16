@@ -1,0 +1,26 @@
+$paleta:(
+    'bg': #1C232E,
+    'bg-nav': #03484C,
+    'acento': #3B8952,
+    'blanco': #FEFFFA,
+    'negro': #000000,
+    'verdeOscuro': #0F684B,
+    'verdeClarito': #53AC59
+);
+
+body {
+    background-color: map-get($map: $paleta, $key:'bg' );
+}
+
+h1 {
+    color: map-get($map: $paleta, $key:'blanco' );
+}
+.navbar-brand {
+    color: map-get($map: $paleta, $key:'blanco' );
+}
+
+.card {
+    background-color: transparent;
+    color: map-get($map: $paleta, $key: 'blanco' );
+    border: 1px solid map-get($map: $paleta, $key:'blanco' );
+}

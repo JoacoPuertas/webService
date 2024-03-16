@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$mainFont : Montserrat, sans-serif;
+$secondFont: Literata, serif;
+
+
+//WEIGHT
+$bold : 600;
+$semiBold: 500;
+$medium: 400;
+$regular: 300;
+
+//SIZE
+$xl : 60px; 
+$largo : 33px;
+$medium : 28px;
+$chiquito : 13px;
+
+
+h1 {
+    font-family: $mainFont;
+    font-weight: $semiBold;
+    text-align: start;
+    margin-top: 20px;
+    font-size: $xl;
+}
+
+.navbar-brand {
+    font-size: $largo;
+}
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size: $largo;
+    }
+}
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: $medium;
+    }
+}
