@@ -8,6 +8,36 @@ h1 {
   font-size: 60px;
 }
 
+h2 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  text-align: start;
+  font-size: 70px;
+}
+
+h3 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-align: start;
+  font-size: 60px;
+}
+
+
+h5 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 100;
+  text-align: start;
+  font-size: 20px;
+}
+
+p {
+  font-family: Literata, serif;
+  font-weight: 100;
+  text-align: start;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
 .navbar-brand {
   font-size: 33px;
 }
@@ -26,7 +56,12 @@ body {
   background-color: #1C232E;
 }
 
-h1 {
+header, main, section, footer {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+h1, h2, h3, h4, h5, p {
   color: #FEFFFA;
 }
 

@@ -25,6 +25,13 @@ h1 {
     font-size: $xl;
 }
 
+p {
+    font-family: $secondFont ;
+    font-weight: $regular;
+    text-align: start;
+    font-size: $medium;
+}
+
 .navbar-brand {
     font-size: $largo;
 }
