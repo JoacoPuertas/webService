@@ -10,32 +10,21 @@ h1 {
 
 h2 {
   font-family: Montserrat, sans-serif;
-  font-weight: 600;
-  text-align: start;
-  font-size: 70px;
+  font-weight: 500;
+  font-size: 60px;
 }
 
 h3 {
   font-family: Montserrat, sans-serif;
-  font-weight: 700;
-  text-align: start;
-  font-size: 60px;
-}
-
-
-h5 {
-  font-family: Montserrat, sans-serif;
-  font-weight: 100;
-  text-align: start;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 33px;
 }
 
 p {
   font-family: Literata, serif;
-  font-weight: 100;
+  font-weight: 300;
   text-align: start;
-  margin-top: 20px;
-  font-size: 20px;
+  font-size: 28px;
 }
 
 .navbar-brand {
@@ -56,12 +45,7 @@ body {
   background-color: #1C232E;
 }
 
-header, main, section, footer {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-h1, h2, h3, h4, h5, p {
+h1 {
   color: #FEFFFA;
 }
 
@@ -147,4 +131,36 @@ main .cartaXl .card-img-top {
     max-width: 100%;
     margin: 10px 0;
   }
+}
+
+#nosotros {
+  padding: 15px;
+  color: #FEFFFA;
+}
+#nosotros .row {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 90%;
+}
+
+#contacto div {
+  margin: auto;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  width: 80%;
+  height: 400px;
+  color: #FEFFFA;
+  background-color: #0F684B;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#contacto div a {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 33px;
 }/*# sourceMappingURL=main.css.map */

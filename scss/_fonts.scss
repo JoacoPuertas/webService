@@ -25,6 +25,18 @@ h1 {
     font-size: $xl;
 }
 
+h2 {
+    font-family: $mainFont;
+    font-weight: $semiBold;
+    font-size: $xl;
+}
+
+h3{
+    font-family: $mainFont;
+    font-weight: $semiBold;
+    font-size: $largo;
+}
+
 p {
     font-family: $secondFont ;
     font-weight: $regular;

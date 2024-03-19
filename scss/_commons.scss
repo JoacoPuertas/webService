@@ -8,8 +8,27 @@ $paleta:(
     'verdeClarito': #53AC59
 );
 
+//MIXINS
+
+@mixin box($border, $radius, $shadow, $width, $height) {
+    border: $border;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    width: $width;
+    height: $height;
+}
+
+//VARS
+$borde: 1px solid map-get($map: $paleta, $key:'negro' );
+$redondeo: 15px;
+$sombra: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+
+
+// PONIENDO LOS COLORES
 body {
     background-color: map-get($map: $paleta, $key:'bg' );
+    color: map-get($map: $paleta, $key:'blacno' );
 }
 
 h1 {
