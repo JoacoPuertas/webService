@@ -3,9 +3,11 @@ $paleta:(
     'bg-nav': #03484C,
     'acento': #3B8952,
     'blanco': #FEFFFA,
-    'negro': #000000,
+    'negro': #212322,
     'verdeOscuro': #0F684B,
-    'verdeClarito': #53AC59
+    'verdeClarito': #53AC59,
+    'clarito':#10c246,
+    'hover':#04d689
 );
 
 //MIXINS
@@ -18,10 +20,16 @@ $paleta:(
     height: $height;
 }
 
+@mixin flex($justify, $align, $direction){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
 //VARS
 $borde: 1px solid map-get($map: $paleta, $key:'negro' );
 $redondeo: 15px;
-$sombra: rgb(38, 57, 77) 0px 20px 30px -10px;
+$sombra: rgb(14, 14, 15) 0px 20px 30px -10px;
 
 
 
@@ -42,4 +50,9 @@ h1 {
     background-color: transparent;
     color: map-get($map: $paleta, $key: 'blanco' );
     border: 1px solid map-get($map: $paleta, $key:'blanco' );
+}
+
+ul {
+    margin: 0;
+    padding: 0;
 }

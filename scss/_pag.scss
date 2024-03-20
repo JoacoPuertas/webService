@@ -14,7 +14,7 @@ nav {
         color: #FEFFFA;
     }
     .nav-link:hover {
-        color: #a5aab4;
+        color: map-get($map: $paleta, $key:'hover');
     }
     .navbar-collapse {
         margin-top: 0;
@@ -106,9 +106,52 @@ main {
         justify-content: space-evenly;
         align-items: center;
         a {
-            font-family: $mainFont;
-            font-weight: $semiBold;
             font-size: $largo;
+            font-weight: $mediano;
+            color: map-get($map: $paleta, $key:'clarito' );
+            &:hover {
+                color: map-get($map: $paleta, $key:'hover' );
+            }
+        }
+    }
+}
+
+footer {
+    .row {
+        margin: auto;
+        width: 80%
+    }
+    .izquierda {
+        @include flex(space-evenly,center,column)
+    }
+    ul {
+        @include flex(space-around, center, row);
+        margin: auto;
+        a {
+            color: map-get($map: $paleta, $key: 'acento' );
+            font-weight: $semiBold;
+            font-size: $textoS;
+        }
+    }
+    h6 {
+        color: map-get($map: $paleta, $key:'blanco' );
+        font-size: 90%;
+        text-align: center;
+    }
+    .boton {
+        text-align: center;
+        .btn {
+            text-align: center;
+            margin: auto;
+            border: $borde;
+            background-color: transparent;
+            color: map-get($map: $paleta, $key:'acento' );
+            font-weight: $semiBold;
+            font-size: $textoS;
+            padding: 0;
+            &:hover {
+                color: map-get($map: $paleta, $key:'hover' );
+            }
         }
     }
 }

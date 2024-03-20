@@ -1,46 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-h1 {
-  font-family: Montserrat, sans-serif;
-  font-weight: 500;
-  text-align: start;
-  margin-top: 20px;
-  font-size: 60px;
-}
-
-h2 {
-  font-family: Montserrat, sans-serif;
-  font-weight: 500;
-  font-size: 60px;
-}
-
-h3 {
-  font-family: Montserrat, sans-serif;
-  font-weight: 500;
-  font-size: 33px;
-}
-
-p {
-  font-family: Literata, serif;
-  font-weight: 300;
-  text-align: start;
-  font-size: 28px;
-}
-
-.navbar-brand {
-  font-size: 33px;
-}
-
-@media screen and (max-width: 991px) {
-  h1 {
-    font-size: 33px;
-  }
-}
-@media screen and (max-width: 700px) {
-  h1 {
-    font-size: 28px;
-  }
-}
 body {
   background-color: #1C232E;
 }
@@ -57,6 +16,59 @@ h1 {
   background-color: transparent;
   color: #FEFFFA;
   border: 1px solid #FEFFFA;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+a:hover {
+  color: #04d689;
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  text-align: start;
+  margin-top: 20px;
+  font-size: clamp(1.75rem, 0.8409rem + 3.6364vw, 3.75rem);
+}
+
+h2 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.75rem, 0.8409rem + 3.6364vw, 3.75rem);
+}
+
+h3 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.5625rem, 1.3352rem + 0.9091vw, 2.0625rem);
+}
+
+p {
+  font-family: Literata, serif;
+  font-weight: 300;
+  font-size: clamp(1.125rem, 0.8409rem + 1.1364vw, 1.75rem);
+}
+
+h6 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar-brand {
+  font-size: clamp(1.5625rem, 1.3352rem + 0.9091vw, 2.0625rem);
 }
 
 nav {
@@ -76,7 +88,7 @@ nav .nav-link {
   color: #FEFFFA;
 }
 nav .nav-link:hover {
-  color: #a5aab4;
+  color: #04d689;
 }
 nav .navbar-collapse {
   margin-top: 0;
@@ -146,9 +158,9 @@ main .cartaXl .card-img-top {
 
 #contacto div {
   margin: auto;
-  border: 1px solid #000000;
+  border: 1px solid #212322;
   border-radius: 15px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  box-shadow: rgb(14, 14, 15) 0px 20px 30px -10px;
   width: 80%;
   height: 400px;
   color: #FEFFFA;
@@ -160,7 +172,54 @@ main .cartaXl .card-img-top {
   align-items: center;
 }
 #contacto div a {
-  font-family: Montserrat, sans-serif;
+  font-size: clamp(1.5625rem, 1.3352rem + 0.9091vw, 2.0625rem);
+  font-weight: 400;
+  color: #10c246;
+}
+#contacto div a:hover {
+  color: #04d689;
+}
+
+footer .row {
+  margin: auto;
+  width: 80%;
+}
+footer .izquierda {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+footer ul a {
+  color: #3B8952;
   font-weight: 500;
-  font-size: 33px;
+  font-size: clamp(1rem, 0.8864rem + 0.4545vw, 1.25rem);
+}
+footer h6 {
+  color: #FEFFFA;
+  font-size: 90%;
+  text-align: center;
+}
+footer .boton {
+  text-align: center;
+}
+footer .boton .btn {
+  text-align: center;
+  margin: auto;
+  border: 1px solid #212322;
+  background-color: transparent;
+  color: #3B8952;
+  font-weight: 500;
+  font-size: clamp(1rem, 0.8864rem + 0.4545vw, 1.25rem);
+  padding: 0;
+}
+footer .boton .btn:hover {
+  color: #04d689;
 }/*# sourceMappingURL=main.css.map */

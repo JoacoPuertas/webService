@@ -7,16 +7,24 @@ $secondFont: Literata, serif;
 //WEIGHT
 $bold : 600;
 $semiBold: 500;
-$medium: 400;
+$mediano: 400;
 $regular: 300;
 
 //SIZE
-$xl : 60px; 
-$largo : 33px;
-$medium : 28px;
+$xl : clamp(1.75rem, 0.8409rem + 3.6364vw, 3.75rem);; 
+$largo : clamp(1.5625rem, 1.3352rem + 0.9091vw, 2.0625rem);;
+$medium: clamp(1.125rem, 0.8409rem + 1.1364vw, 1.75rem);;
+$textoS: clamp(1rem, 0.8864rem + 0.4545vw, 1.25rem);;
 $chiquito : 13px;
 
-
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    &:hover {
+        color: map-get($map: $paleta, $key:'hover' );
+    }
+}
 h1 {
     font-family: $mainFont;
     font-weight: $semiBold;
@@ -40,20 +48,26 @@ h3{
 p {
     font-family: $secondFont ;
     font-weight: $regular;
-    text-align: start;
     font-size: $medium;
 }
 
+h6 {
+    font-family: $mainFont ;
+    font-weight: $regular;
+}
+li {
+    list-style: none;
+}
 .navbar-brand {
     font-size: $largo;
 }
-@media screen and (max-width: 991px) {
-    h1 {
-        font-size: $largo;
-    }
-}
-@media screen and (max-width: 700px) {
-    h1 {
-        font-size: $medium;
-    }
-}
+// @media screen and (max-width: 991px) {
+//     h1 {
+//         font-size: $largo;
+//     }
+// }
+// @media screen and (max-width: 700px) {
+//     h1 {
+//         font-size: $medium;
+//     }
+// }
