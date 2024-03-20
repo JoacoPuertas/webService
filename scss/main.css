@@ -222,4 +222,8 @@ footer .boton .btn {
 }
 footer .boton .btn:hover {
   color: #04d689;
+  background-color: transparent;
+}
+footer .boton .btn:focus {
+  border: none;
 }/*# sourceMappingURL=main.css.map */

@@ -151,6 +151,10 @@ footer {
             padding: 0;
             &:hover {
                 color: map-get($map: $paleta, $key:'hover' );
+                background-color: transparent;
+            }
+            &:focus{
+                border: none;
             }
         }
     }
