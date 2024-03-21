@@ -49,7 +49,7 @@ h2 {
 h3 {
   font-family: Montserrat, sans-serif;
   font-weight: 500;
-  font-size: clamp(1.5625rem, 1.3352rem + 0.9091vw, 2.0625rem);
+  font-size: clamp(1.5rem, 1.1591rem + 1.3636vw, 2.25rem);
 }
 
 p {
@@ -111,6 +111,7 @@ nav .navbar-toggler:hover {
 
 main .card {
   padding: 0;
+  box-shadow: rgb(14, 14, 15) 0px 20px 30px -10px;
 }
 main .card img {
   border-bottom: 1px solid #FEFFFA;
@@ -118,6 +119,8 @@ main .card img {
 main .row {
   display: flex;
   justify-content: space-around;
+  width: 90%;
+  margin: auto;
 }
 main .row .carta {
   max-width: 45%;
@@ -146,7 +149,6 @@ main .cartaXl .card-img-top {
 }
 
 #nosotros {
-  padding: 15px;
   color: #FEFFFA;
 }
 #nosotros .row {
@@ -162,7 +164,7 @@ main .cartaXl .card-img-top {
   border-radius: 15px;
   box-shadow: rgb(14, 14, 15) 0px 20px 30px -10px;
   width: 80%;
-  height: 400px;
+  height: 300px;
   color: #FEFFFA;
   background-color: #0F684B;
   padding: 15px;
@@ -172,7 +174,7 @@ main .cartaXl .card-img-top {
   align-items: center;
 }
 #contacto div a {
-  font-size: clamp(1.5625rem, 1.3352rem + 0.9091vw, 2.0625rem);
+  font-size: clamp(1.25rem, 0.8807rem + 1.4773vw, 2.0625rem);
   font-weight: 400;
   color: #10c246;
 }
@@ -180,6 +182,15 @@ main .cartaXl .card-img-top {
   color: #04d689;
 }
 
+@media screen and (max-width: 991px) {
+  #contacto div {
+    height: 200px;
+  }
+}
+footer {
+  background-color: #212322;
+  padding-top: 25px;
+}
 footer .row {
   margin: auto;
   width: 80%;
@@ -213,7 +224,7 @@ footer .boton {
 footer .boton .btn {
   text-align: center;
   margin: auto;
-  border: 1px solid #212322;
+  border: none;
   background-color: transparent;
   color: #3B8952;
   font-weight: 500;
@@ -226,4 +237,11 @@ footer .boton .btn:hover {
 }
 footer .boton .btn:focus {
   border: none;
+}
+footer .modal-content {
+  background-color: #212322;
+  color: #FEFFFA;
+}
+footer .modal-content .modal-header h4 {
+  font-size: clamp(1.25rem, 0.8807rem + 1.4773vw, 2.0625rem);
 }/*# sourceMappingURL=main.css.map */
