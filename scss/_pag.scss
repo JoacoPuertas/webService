@@ -153,22 +153,25 @@ main {
 #servicios {
     .accordion {
         .accordion-item {
-            @include accordion(center,start, $borde, $redondeo, $sombra);
-            background-color: map-get($map: $paleta, $key:'blanco' );
-            color: map-get($map: $paleta, $key:'negro' );
-            border: 1px solid map-get($map: $paleta, $key:'negro' );
+            @include accordion(center, start, column, $borde, $redondeo, $sombra); 
+            background-color: map-get($map: $paleta, $key: 'transparente');
+            color: map-get($map: $paleta, $key: 'blanco');
+            border: 1px solid map-get($map: $paleta, $key: 'blanco');
         }
 
         .accordion-button {
-            background-color: map-get($map: $paleta, $key:'blanco' );
-            color: map-get($map: $paleta, $key:'negro' );
+            background-color: map-get($map: $paleta, $key:'transparente' );
+            color: map-get($map: $paleta, $key:'blanco' );
+            &::after {
+                color: white !important; // Importante para anular los estilos predeterminados
+            }
             &:focus {
                 box-shadow: none;
             }
         }
 
         .collapse {
-            border-top:1px solid map-get($map: $paleta, $key:'negro' );
+            border-top:1px solid map-get($map: $paleta, $key:'blanco' );
         }
         p {
             font-size: $textoS;

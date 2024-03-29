@@ -43,13 +43,13 @@ h1 {
 
 h2 {
   font-family: Montserrat, sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: clamp(1.75rem, 0.8409rem + 3.6364vw, 3.75rem);
 }
 
 h3 {
   font-family: Montserrat, sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: clamp(1.5rem, 1.1591rem + 1.3636vw, 2.25rem);
 }
 
@@ -212,24 +212,28 @@ main .cartaXl .card-img-top {
   }
 }
 #servicios .accordion .accordion-item {
+  flex-direction: column;
   justify-content: center;
   align-items: start;
   border: 1px solid #212321;
   border-radius: 15px;
   box-shadow: rgb(14, 14, 15) 0px 20px 30px -10px;
-  background-color: #FEFFFA;
-  color: #212321;
-  border: 1px solid #212321;
+  background-color: rgba(255, 255, 255, 0);
+  color: #FEFFFA;
+  border: 1px solid #FEFFFA;
 }
 #servicios .accordion .accordion-button {
-  background-color: #FEFFFA;
-  color: #212321;
+  background-color: rgba(255, 255, 255, 0);
+  color: #FEFFFA;
+}
+#servicios .accordion .accordion-button::after {
+  color: white !important;
 }
 #servicios .accordion .accordion-button:focus {
   box-shadow: none;
 }
 #servicios .accordion .collapse {
-  border-top: 1px solid #212321;
+  border-top: 1px solid #FEFFFA;
 }
 #servicios .accordion p {
   font-size: clamp(1rem, 0.8864rem + 0.4545vw, 1.25rem);
