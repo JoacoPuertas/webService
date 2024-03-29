@@ -227,8 +227,10 @@ main .cartaXl .card-img-top {
   color: #FEFFFA;
 }
 #servicios .accordion .accordion-button::after {
-  color: white !important;
+  color: rgba(255, 255, 255, 0); /* Hacemos el ícono transparente */
+  filter: invert(100%); /* Invertimos los colores para cambiar el ícono a blanco */
 }
+
 #servicios .accordion .accordion-button:focus {
   box-shadow: none;
 }
