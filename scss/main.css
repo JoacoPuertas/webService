@@ -194,19 +194,22 @@ main .cartaXl .card-img-top {
   align-items: start;
 }
 #servicios .accordion .accordion-item {
-  background-color: transparent;
-  color: #FEFFFA;
-  border: 1px solid #FEFFFA;
+  background-color: #FEFFFA;
+  color: #212322;
+  border: 1px solid #212322;
 }
 #servicios .accordion .accordion-button {
-  background-color: transparent;
-  color: #FEFFFA;
+  background-color: #FEFFFA;
+  color: #212322;
 }
 #servicios .accordion .accordion-button:focus {
   box-shadow: none;
 }
 #servicios .accordion .collapse {
-  border-top: 1px solid #FEFFFA;
+  border-top: 1px solid #212322;
+}
+#servicios .accordion p {
+  font-size: clamp(1rem, 0.8864rem + 0.4545vw, 1.25rem);
 }
 
 footer {

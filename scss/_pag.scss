@@ -126,26 +126,34 @@ main {
     }
 }
 #servicios {
-
     .accordion {
-        .accordion-item {
-            background-color: transparent;
-            color: map-get($map: $paleta, $key:'blanco' );
-            border: 1px solid map-get($map: $paleta, $key:'blanco' );
-        }
         @include flex(center,start,row);
+
+        .accordion-item {
+            background-color: map-get($map: $paleta, $key:'blanco' );
+            color: map-get($map: $paleta, $key:'negro' );
+            border: 1px solid map-get($map: $paleta, $key:'negro' );
+        }
+
         .accordion-button {
-            background-color: transparent;
-            color: map-get($map: $paleta, $key:'blanco' );
+            background-color: map-get($map: $paleta, $key:'blanco' );
+            color: map-get($map: $paleta, $key:'negro' );
             &:focus {
                 box-shadow: none;
             }
         }
+
         .collapse {
-            border-top:1px solid map-get($map: $paleta, $key:'blanco' );
+            border-top:1px solid map-get($map: $paleta, $key:'negro' );
+        }
+        p {
+            font-size: $textoS;
         }
     }
 }
+
+
+
 footer {
     background-color: map-get($map: $paleta, $key:'negro' );
     padding-top: 25px;
