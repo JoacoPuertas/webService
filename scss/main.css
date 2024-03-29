@@ -109,6 +109,12 @@ nav .navbar-toggler:hover {
   }
 }
 
+main a {
+  color: #FEFFFA;
+}
+main a:hover {
+  color: #04d689;
+}
 main .card {
   padding: 0;
   box-shadow: rgb(14, 14, 15) 0px 20px 30px -10px;

@@ -42,6 +42,12 @@ nav {
 // TRABAJOS
 
 main {
+    a {
+        color: map-get($map: $paleta, $key:'blanco' );
+        &:hover {
+            color: map-get($map: $paleta, $key:'hover' );
+        }
+    }
     .card {
         padding: 0;
         img {
