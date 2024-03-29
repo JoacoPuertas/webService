@@ -1,8 +1,11 @@
+// NAV BAR
+
 nav {
     display: flex;
     justify-content: space-around; /* Centrar horizontalmente el grupo de enlaces */
     align-items: center; /* Centrar verticalmente el grupo de enlaces */
-    background-color: #034B4C; /* Añade un color de fondo si lo deseas */
+    background-color: #212321; /* Añade un color de fondo si lo deseas */
+    padding-top: 25px;
     .nav {
         display: flex;
         align-items: center; /* Centrar los elementos hijos verticalmente */
@@ -11,7 +14,7 @@ nav {
         width: 5vw;
     }
     .nav-link {
-        color: #FEFFFA;
+        color: #3B8952;
     }
     .nav-link:hover {
         color: map-get($map: $paleta, $key:'hover');
@@ -29,6 +32,22 @@ nav {
         --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         opacity: 0.75;
       }
+      .btn-principal {
+        padding: 5px 10px;
+        border-radius: 10px;
+        border: 1px solid map-get($map: $paleta, $key:'negro' );
+        background-color: map-get($map: $paleta, $key:'acento' );
+        &:hover {
+            border: 1px solid map-get($map: $paleta, $key:'blanco' );
+            background-color: map-get($map: $paleta, $key:'acento' );
+            a {
+                color: map-get($map: $paleta, $key:'blanco' );
+            }
+        }
+        a {
+            color: map-get($map: $paleta, $key:'negro' );
+        }
+    }
 
     @media screen and (max-width: 991px) {
         .navbar-collapse {
@@ -37,7 +56,6 @@ nav {
         }
     }
 }
-
 
 // TRABAJOS
 
@@ -96,7 +114,7 @@ main {
         display: flex;
         justify-content: space-around;
         margin: auto;
-        width: 90%;
+        width: 85%;
     }
     color: map-get($map: $paleta, $key:'blanco' );
 }
@@ -131,11 +149,11 @@ main {
         }
     }
 }
+
 #servicios {
     .accordion {
-        @include flex(center,start,row);
-
         .accordion-item {
+            @include accordion(center,start, $borde, $redondeo, $sombra);
             background-color: map-get($map: $paleta, $key:'blanco' );
             color: map-get($map: $paleta, $key:'negro' );
             border: 1px solid map-get($map: $paleta, $key:'negro' );
@@ -157,7 +175,6 @@ main {
         }
     }
 }
-
 
 
 footer {
@@ -236,3 +253,5 @@ footer {
     }
 
 }
+
+
