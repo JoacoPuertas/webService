@@ -127,6 +127,21 @@ nav .btn-principal a {
   }
 }
 
+#contenido {
+  margin: auto; /* Centra el contenido horizontalmente */
+  width: 78%; /* Define el ancho del contenido */
+  margin-bottom: 150px;
+}
+
+#contenido #nosotros {
+  margin-bottom: 150px !important;
+}
+
+
+section {
+  width: 100%; /* Ocupa todo el ancho del div contenido */
+}
+
 main a {
   color: #FEFFFA;
 }
@@ -151,7 +166,7 @@ main .row .carta {
 }
 main .cartaXl {
   max-width: 95%;
-  margin: 25px 0;
+  margin: 0; /* Eliminado el margen vertical */
 }
 main .cartaXl .card-img-top {
   max-height: 600px;
@@ -177,40 +192,11 @@ main .cartaXl .card-img-top {
 }
 #nosotros .row {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: auto;
   width: 85%;
 }
 
-#contacto div {
-  margin: auto;
-  border: 1px solid #212321;
-  border-radius: 15px;
-  box-shadow: rgb(14, 14, 15) 0px 20px 30px -10px;
-  width: 80%;
-  height: 300px;
-  color: #FEFFFA;
-  background-color: #0F684B;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-#contacto div a {
-  font-size: clamp(1.25rem, 0.8807rem + 1.4773vw, 2.0625rem);
-  font-weight: 400;
-  color: #10c246;
-}
-#contacto div a:hover {
-  color: #04d689;
-}
-
-@media screen and (max-width: 991px) {
-  #contacto div {
-    height: 200px;
-  }
-}
 #servicios .accordion .accordion-item {
   flex-direction: column;
   justify-content: center;
@@ -227,10 +213,8 @@ main .cartaXl .card-img-top {
   color: #FEFFFA;
 }
 #servicios .accordion .accordion-button::after {
-  color: rgba(255, 255, 255, 0); /* Hacemos el ícono transparente */
-  filter: invert(100%); /* Invertimos los colores para cambiar el ícono a blanco */
+  color: white !important;
 }
-
 #servicios .accordion .accordion-button:focus {
   box-shadow: none;
 }

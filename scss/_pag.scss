@@ -79,12 +79,12 @@ main {
         width: 90%;
         margin: auto;
         .carta {
-        max-width: 45%;
+            max-width: 45%;
         }
     }
     .cartaXl {
         max-width: 95%;
-        margin: 25px 0;
+        margin: 0; /* Eliminado el margen vertical */
         .card-img-top {
             max-height: 600px;
             object-fit: cover;
@@ -95,13 +95,12 @@ main {
         .row {
             justify-content: center;
             .carta {
-            max-width: 100%;
-            margin: 10px 0;
+                max-width: 100%;
+                margin: 10px 0;
             }
             .cartaXl {
                 max-width: 100%;
                 margin: 10px 0;
-
             }
         }
     }
@@ -119,36 +118,7 @@ main {
     color: map-get($map: $paleta, $key:'blanco' );
 }
 
-//CONTACTO
-#contacto {
-    div {
-        margin: auto;
-        @include box($borde, $redondeo, $sombra, 80%, 300px );
-        color: map-get($map: $paleta, $key:'blanco' );
-        background-color: map-get($map: $paleta, $key:'verdeOscuro' );
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        a {
-            font-size: clamp(1.25rem, 0.8807rem + 1.4773vw, 2.0625rem);
-            font-weight: $mediano;
-            color: map-get($map: $paleta, $key:'clarito' );
-            &:hover {
-                color: map-get($map: $paleta, $key:'hover' );
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 991px) {
-    #contacto {
-        div {
-            height: 200px;
-        }
-    }
-}
+// SERVICIOS
 
 #servicios {
     .accordion {
@@ -179,6 +149,7 @@ main {
     }
 }
 
+// FOOTER
 
 footer {
     background-color: map-get($map: $paleta, $key:'negro' );
