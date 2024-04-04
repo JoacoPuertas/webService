@@ -128,15 +128,10 @@ nav .btn-principal a {
 }
 
 #contenido {
-  margin: auto; /* Centra el contenido horizontalmente */
+  margin: auto ; /* Centra el contenido horizontalmente */
   width: 78%; /* Define el ancho del contenido */
-  margin-bottom: 150px;
+  margin-bottom: 100px !important;
 }
-
-#contenido #nosotros {
-  margin-bottom: 150px !important;
-}
-
 
 section {
   width: 100%; /* Ocupa todo el ancho del div contenido */
@@ -158,15 +153,6 @@ main .card img {
 main .row {
   display: flex;
   justify-content: space-around;
-  width: 90%;
-  margin: auto;
-}
-main .row .carta {
-  max-width: 45%;
-}
-main .cartaXl {
-  max-width: 95%;
-  margin: 0; /* Eliminado el margen vertical */
 }
 main .cartaXl .card-img-top {
   max-height: 600px;
@@ -178,7 +164,7 @@ main .cartaXl .card-img-top {
     justify-content: center;
   }
   main .row .carta {
-    max-width: 100%;
+    max-width: 45%;
     margin: 10px 0;
   }
   main .row .cartaXl {
@@ -193,8 +179,19 @@ main .cartaXl .card-img-top {
 #nosotros .row {
   display: flex;
   justify-content: space-between;
-  margin: auto;
-  width: 85%;
+}
+
+
+
+#servicios {
+  width: 78%; /* Ajusta el ancho para que coincida con el div contenido */
+  margin: 0; /* Centra el accordion horizontalmente */
+}
+
+#servicios .accordion {
+  display: flex; 
+  justify-content: space-between;
+  margin: 0; /* Elimina el margen para que coincida con el margen del div contenido */
 }
 
 #servicios .accordion .accordion-item {
@@ -202,7 +199,7 @@ main .cartaXl .card-img-top {
   justify-content: center;
   align-items: start;
   border: 1px solid #212321;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: rgb(14, 14, 15) 0px 20px 30px -10px;
   background-color: rgba(255, 255, 255, 0);
   color: #FEFFFA;
@@ -213,7 +210,8 @@ main .cartaXl .card-img-top {
   color: #FEFFFA;
 }
 #servicios .accordion .accordion-button::after {
-  color: white !important;
+  color: rgba(255, 255, 255, 0); /* Hacemos el ícono transparente */
+  filter: invert(100%); /* Invertimos los colores para cambiar el ícono a blanco */
 }
 #servicios .accordion .accordion-button:focus {
   box-shadow: none;
